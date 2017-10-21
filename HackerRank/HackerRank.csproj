@@ -49,6 +49,7 @@
     <Compile Include="Sorting\CountSortingStable.cs" />
     <Compile Include="Sorting\CountSortNotStableFaster.cs" />
     <Compile Include="Sorting\InsertionSorting.cs" />
+    <Compile Include="Sorting\RadixSorting.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
   </ItemGroup>
   <ItemGroup>
