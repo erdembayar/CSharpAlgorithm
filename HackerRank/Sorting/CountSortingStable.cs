@@ -9,21 +9,21 @@ namespace HackerRank.Sorting
     public class CountSortingStable
     {
 
-        public static void Main(string[] args)
-        {
-            int[] arr = { 2, 5, 3, 0, 2, 3, 0, 3 };
-            int k = 6;
-            int[] result = countSort(arr,k);
+        //public static void Main(string[] args)
+        //{
+        //    int[] arr = { 2, 5, 3, 0, 2, 3, 0, 3 };
+        //    int k = 6;
+        //    int[] result = countSort(arr,k);
 
-            int length = arr.Length;
+        //    int length = arr.Length;
 
-            for (int i = 0; i < length; i++)
-            {
-                Console.Write(result[i]+" ");
-            }
+        //    for (int i = 0; i < length; i++)
+        //    {
+        //        Console.Write(result[i]+" ");
+        //    }
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         static int[] countSort(int[] arr, int k)
         {
