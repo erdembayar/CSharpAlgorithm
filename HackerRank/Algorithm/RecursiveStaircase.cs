@@ -12,41 +12,41 @@ namespace HackerRank.Algorithm
 {
     class RecursiveStaircase
     {
-        static void Main(string[] args)
-        {
-            int steps = 32;
+        //static void Main(string[] args)
+        //{
+        //    int steps = 32;
             
 
-            var sw = Stopwatch.StartNew();
-            int result = countPathsRecursive(steps);
-            sw.Stop();
+        //    var sw = Stopwatch.StartNew();
+        //    int result = countPathsRecursive(steps);
+        //    sw.Stop();
 
-            Console.WriteLine("Brute force recursive:" + result);
-            Console.WriteLine("Time elapse:"+sw.Elapsed);
+        //    Console.WriteLine("Brute force recursive:" + result);
+        //    Console.WriteLine("Time elapse:"+sw.Elapsed);
 
-            sw.Reset();
-            sw.Start();
-            int[] memo = new int[steps + 1];
+        //    sw.Reset();
+        //    sw.Start();
+        //    int[] memo = new int[steps + 1];
 
-            result = countPathsMemozation(memo, steps);
-            sw.Stop();
+        //    result = countPathsMemozation(memo, steps);
+        //    sw.Stop();
 
-            Console.WriteLine("Memoziation recursive:" + result);
-            Console.WriteLine("Time elapse:" + sw.Elapsed);
+        //    Console.WriteLine("Memoziation recursive:" + result);
+        //    Console.WriteLine("Time elapse:" + sw.Elapsed);
 
-            sw.Reset();
-            sw.Start();
+        //    sw.Reset();
+        //    sw.Start();
 
-            result = countPathDynamicProgramming(steps);
-            sw.Stop();
+        //    result = countPathDynamicProgramming(steps);
+        //    sw.Stop();
 
-            Console.WriteLine("Dynamic programming:" + result);
-            Console.WriteLine("Time elapse:" + sw.Elapsed);
+        //    Console.WriteLine("Dynamic programming:" + result);
+        //    Console.WriteLine("Time elapse:" + sw.Elapsed);
 
-            Console.ReadKey();
+        //    Console.ReadKey();
 
             
-        }
+        //}
 
         static int countPathsRecursive(int steps)
         {
